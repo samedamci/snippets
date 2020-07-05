@@ -1,0 +1,10 @@
+snippet query
+abbr query selector
+  document.querySelector("${1:#:.class or #id}")
+
+
+snippet arrow
+abbr arrow function
+  {$1:const} ${2:#:name} = (${3:#:args}) => {
+    ${5:#:statement}
+  }
