@@ -1,0 +1,21 @@
+snippet !flask
+abbr init flask app
+  from flask import Flask
+
+  app = Flask(__name__)
+
+
+snippet !main
+abbr define main function
+  def main():
+    ${1:pass}
+
+  if __name__ == "__main__":
+    main()
+
+
+snippet class
+abbr create class
+  class ${1:Name}(${2}):
+    def __init__(self${3:#:, args}):
+      ${4:pass}
