@@ -15,3 +15,10 @@ abbr if statement
   if [ ${1:#:condition} ]; then
     ${2:#:statement}
   fi
+
+
+snippet case
+abbr case statement
+  case "${1}" in
+    ${2}) ${3};;
+  esac
