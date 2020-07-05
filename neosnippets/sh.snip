@@ -22,3 +22,17 @@ abbr case statement
   case "${1}" in
     ${2}) ${3};;
   esac
+
+
+snippet for
+abbr for loop
+  for ${1:#:iterator} in ${2:#:iterable}; do
+    ${3:#:statement}
+  done
+
+
+snippet while
+abbr while loop
+  while [ ${1:#:condition} ]; do
+    ${2:#:statement}
+  done
