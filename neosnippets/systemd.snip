@@ -1,0 +1,15 @@
+snippet !
+abbr init
+  [Unit]
+  Description=${1}
+  After=${2:network.target}
+
+  [Service]
+  Type=${3:simple}
+  User=${4}
+  WorkingDirectory=${5}
+  ExecStart=${6}
+  Restart=${7:on-failure}
+
+  [Install]
+  WantedBy=${8:multi-user.target}
