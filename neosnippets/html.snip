@@ -1,0 +1,24 @@
+snippet !
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>${1}</title>
+      <link href="${2:/dist/styles/index.css}" rel="stylesheet" />
+      <meta property="og:description" content="${3:Hello}" />
+      <meta property="og:title" content="${1}" />
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+      ${4}
+    </body>
+  </html>
+
+snippet css
+  <link href="${1}" rel="stylesheet" />
+
+snippet script
+  <script src="${1}"></script>
